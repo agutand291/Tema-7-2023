@@ -2,15 +2,23 @@ package exercise_1_1;
 
 public class Student extends Person {
 
-	private boolean repetidor;
+	private boolean repeater;
 
 	Student() {
-		this.repetidor = false;
+		this.setRepetidor(false);
+	}
+
+	public boolean isRepetidor() {
+		return repeater;
+	}
+
+	public void setRepetidor(boolean repetidor) {
+		this.repeater = repetidor;
 	}
 
 	@Override
 	public String toString() {
-		return
+		return super.toString().concat(" repeater: " + repeater);
 	}
 
 }

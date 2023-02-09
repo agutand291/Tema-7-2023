@@ -5,12 +5,20 @@ public class Teacher extends Person {
 	private double salary;
 
 	Teacher() {
-		this.salary = 0;
+		this.setSalary(0);
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
 	}
 
 	@Override
 	public String toString() {
-		return ("");
+		return super.toString().concat(" salary: " + salary);
 	}
 
 }
